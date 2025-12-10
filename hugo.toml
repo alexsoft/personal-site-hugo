@@ -12,3 +12,7 @@ theme = 'paper'
   name = 'Alex Plekhanov'
   #monoDarkIcon = true
   mainSections = ['blog']
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
