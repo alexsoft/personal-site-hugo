@@ -1,0 +1,14 @@
+baseURL = 'https://dev.alex.plekhanov.io'
+languageCode = 'en-us'
+title = 'Alex Plekhanov'
+theme = 'paper'
+
+[params]
+  # color style
+  color = 'gray' # linen, wheat, gray, light
+  github = 'alexsoft'
+  linkedin = 'alexplekhanov'
+  avatar = 'oleksii@plekhanov.io'
+  name = 'Alex Plekhanov'
+  #monoDarkIcon = true
+  mainSections = ['blog']
