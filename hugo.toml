@@ -1,18 +1,52 @@
-baseURL = 'https://dev.alex.plekhanov.io'
+baseURL = 'https://alex.plekhanov.dev/'
 languageCode = 'en-us'
 title = 'Alex Plekhanov'
-theme = 'paper'
+theme = 'PaperMod'
+
+[markup.goldmark.renderer]
+unsafe = true
 
 [params]
-  # color style
-  color = 'gray' # linen, wheat, gray, light
-  github = 'alexsoft'
-  linkedin = 'alexplekhanov'
-  avatar = 'oleksii@plekhanov.io'
-  name = 'Alex Plekhanov'
-  #monoDarkIcon = true
-  mainSections = ['blog']
+author = 'Alex Plekhanov'
+description = 'Alex Plekhanov is a Web developer who is always in process of doing something great'
+ShowReadingTime = false
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = false
+ShowCodeCopyButtons = true
+ShowWordCount = false
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+HideMeta = false
 
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+[params.homeInfoParams]
+Title = "Hi there 👋"
+Content = "I'm Alex, a Senior Software Engineer specializing in PHP. And I also run my own projects."
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/alexsoft"
+
+[[menu.main]]
+identifier = "projects"
+name = "💻 Projects"
+url = "/projects/"
+weight = 1
+
+[[menu.main]]
+identifier = "blog"
+name = "🎲 Blog"
+url = "/blog/"
+weight = 2
+
+[[menu.main]]
+identifier = "travel"
+name = "🌎 Travel"
+url = "/travel/countries/"
+weight = 3
+
+[[menu.main]]
+identifier = "cv"
+name = "CV"
+url = "/cv/"
+weight = 4

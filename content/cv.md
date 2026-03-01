@@ -1,9 +1,7 @@
-+++
-menus = 'main'
-title = 'CV'
-url = '/cv/'
-weight = 50
-+++
+---
+title: "CV"
+HideMeta: true
+---
 
 # Alex Plekhanov
 
@@ -11,63 +9,41 @@ weight = 50
 
 **Location:** Luxembourg, Schuttrange 🇱🇺
 
-**GitHub:** [alexsoft](https://github.com/alexsoft)
-
----
+[GitHub](https://github.com/alexsoft)
 
 ## Currently
 
-#### **Senior Software Engineer, PHP**
-
+**Senior Software Engineer, PHP**
 November 2017 — Present
-
-Undisclosed — Live Streaming and Broadcasting company
-
----
+*Undisclosed* — Live Streaming and Broadcasting company
 
 ## Previous experience
 
-#### **PHP Developer**
-
+**PHP Developer**
 Jun 2015 — Jul 2017
+*Stickerpipe (908.vc)* — API for camera content and stickers in messengers/keyboards
 
-Stickerpipe (908.vc) — API for camera content and stickers in messengers/keyboards
-
-#### **PHP Developer**
-
+**PHP Developer**
 Oct 2013 — May 2015
+*DataArt* — Software Development Company
 
-DataArt — Software Development Company
-
-#### **PHP Developer**
-
+**PHP Developer**
 Apr 2013 — May 2013
+*FORFORCE* — Digital production
 
-FORFORCE — Digital production
-
-#### **PHP Developer**
-
+**PHP Developer**
 Oct 2012 — Mar 2013
-
-OWOX — E-commerce
-
----
+*OWOX* — E-commerce
 
 ## Education
 
-#### Bachelor's degree
-
+**Bachelor's degree**
 Sep 2010 — Jun 2015
-
 Dnipropetrovsk national university named after Oles Honchar. Applied mathematics faculty.
 
-#### High school
-
+**High school**
 Sep 2006 — Jun 2010
-
 Lyceum of information technologies. Dnipropetrovsk.
-
----
 
 ## Skills
 
@@ -78,31 +54,29 @@ I have experience working with:
 - Git
 - Servers' provisioning
 
-**PHP**  
+### PHP
 10 years of experience
 
-**Laravel**  
+### Laravel
 8 years of experience
 
-**Slim**  
+### Slim
 5 years of experience
 
-**MySQL**  
+### MySQL
 10 years of experience
 
-**Docker**  
+### Docker
 3 years of experience
 
-**Javascript**  
+### Javascript
 10 years of experience
 
-**Vue.js**  
+### Vue.js
 4 years of experience
 
-**English language**  
+### English language
 Advanced. I have passed 3 Cambridge exams: KET, PET, FCE
-
----
 
 ## Hobbies
 

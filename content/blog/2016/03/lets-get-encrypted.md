@@ -1,11 +1,13 @@
-+++
-date = 2016-03-02T13:00:00+01:00
-title = "🔐 Let's Get Encrypted"
-+++
+---
+title: "Let's Get Encrypted"
+date: 2016-03-01
+draft: false
+---
+
 Long story short: I finally managed to get SSL certificate from "Let's Encrypt" and automate the process of certificates renewal.
 And I would love to share my experience with you!
 
-### What is "Let's Encrypt"?
+#### What is "Let's Encrypt"?
 
 ["Let's Encrypt"][letsencrypt] is the authority that provides free ssl certificates. This initiative is now supported by everyone,
 so it means that you really get trusted certificates.
@@ -22,7 +24,7 @@ That's why they issue certificates only for 3 months. So there is less time of v
 And of course it is highly recommended not to renew certificates manually. If you can automate it, do it!
 So just configure your cron to renew certificates every month and that's it.
 
-### Technical details
+#### Technical details
 
 Let's dive into technical details of this process. There is a console utility written in Python. You just clone it from github.
 
@@ -34,13 +36,13 @@ $ ./letsencrypt-auto --help
 
 Next there are 4 ways to acquire your certificate:
 
-#### Apache plugin
+##### Apache plugin
 It is completely automated, it will do everything for you, but I don't use apache, and you should not either :)
 
-#### Nginx plugin
+##### Nginx plugin
 It is not actually ready yet, so I even didn't try to use it
 
-#### Standalone
+##### Standalone
 You just run next command in your console and that's it.
 ```
 letsencrypt certonly --standalone -d example.com -d www.example.com
@@ -50,7 +52,7 @@ No! Actually not really! Well, I mean it will be done but... The problem is that
 And you know what it means. You need to stop your webserver. And that's definitely not you would like to do
 in your production environment.
 
-#### Webroot
+##### Webroot
 And here comes the last approach, and to be honest, for me it is the most preferred one.
 
 ```
@@ -85,7 +87,7 @@ letsencrypt certonly --webroot -w /var/www/ssl -d example.com
 
 After that you will get a congratulations message.
 
-### Nginx ssl configuration
+#### Nginx ssl configuration
 Then, of course, we need to configure nginx to use these certificates.
 After webroot and standalone approaches your certificate lies in ```/etc/letsencrypt/live/example.com```
 In your nginx server context just add 3 rows.
@@ -104,7 +106,7 @@ sudo /etc/init.d/nginx reload
 
 And it is done. Oh, no, we forgot about one last thing.
 
-### Automatic renewal
+#### Automatic renewal
 The thing is you need to setup crontab to launch the renewal process every month, or two, if you'd like.
 Just add it to your crontab and be happy.
 
